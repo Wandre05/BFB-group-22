@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Customer</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Customer Portal</h1>
+            <p>Welcome, customer. From here you can submit grocery items, view products and check order status.</p>
+        </header>
+
+        <main>
+            <section>
+                <h2>Submit grocery items</h2>
+                <p>List each grocery item on a new line. This form posts to a placeholder endpoint.</p>
+                <form action="submit_groceries.html" method="post">
+                    <label for="items">Grocery Items</label>
+                    <textarea id="items" name="items" rows="6" required></textarea>
+                    <p><button type="submit">Submit</button></p>
+                </form>
+            </section>
+
+            <section>
+                <h2>Your Orders</h2>
+                <p>(Orders and order history would be shown here.)</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 — Example Company</p>
+            <p><a class="btn btn--danger" href="Home.html">Back to Home</a></p>
+        </footer>
+    </body>
+</html>
